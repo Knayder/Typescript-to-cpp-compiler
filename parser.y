@@ -43,7 +43,7 @@
 %%
 start:
     prog {
-        printf("#include <iostream>\n\n%s\n", $1->c_str());
+        printf("\n#include <iostream>\n#include <string>\n\n%s\n", $1->c_str());
         delete $1;
     }
 ;
